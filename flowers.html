@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For You 🌷</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <section class="card">
+            <div class="flowers-illustration">
+                <div class="ground"></div>
+
+                <div class="tulip tulip-left">
+                    <div class="stem"></div>
+                    <div class="leaf leaf-left"></div>
+                    <div class="leaf leaf-right"></div>
+                    <div class="head head-pink">
+                        <span class="cup"></span>
+                        <span class="petal p1"></span>
+                        <span class="petal p2"></span>
+                        <span class="petal p3"></span>
+                        <span class="glow"></span>
+                    </div>
+                </div>
+
+                <div class="tulip tulip-middle">
+                    <div class="stem"></div>
+                    <div class="leaf leaf-left"></div>
+                    <div class="leaf leaf-right"></div>
+                    <div class="head head-cream">
+                        <span class="cup"></span>
+                        <span class="petal p1"></span>
+                        <span class="petal p2"></span>
+                        <span class="petal p3"></span>
+                        <span class="glow"></span>
+                    </div>
+                </div>
+
+                <div class="tulip tulip-right">
+                    <div class="stem"></div>
+                    <div class="leaf leaf-left"></div>
+                    <div class="leaf leaf-right"></div>
+                    <div class="head head-blue">
+                        <span class="cup"></span>
+                        <span class="petal p1"></span>
+                        <span class="petal p2"></span>
+                        <span class="petal p3"></span>
+                        <span class="glow"></span>
+                    </div>
+                </div>
+
+                <div class="sparkles">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <div class="text-area">
+                <h1>For a Special Girl</h1>
+                <p class="small-note">
+                    A little glowing tulip garden, just for you.
+                </p>
+
+                <div class="message-box">
+                    <h2 class="message-title">To my Dearest</h2>
+                    <p class="message-text">
+                        There was once a time when I never imagined myself in this situation.
+                        I’m glad that you brought light to my unclear path. These glowing tulips represent you,
+                        as you bring radiant light into my life. A year has indeed been short, yet filled with so much meaning.
+                    </p>
+                </div>
+
+                <p class="signature">
+                   
+                </p>
+            </div>
+        </section>
+
+        <script>
+            const tulips = document.querySelectorAll('.tulip');
+            tulips.forEach(tulip => {
+                tulip.addEventListener('mouseenter', () => {
+                    tulip.classList.add('bright');
+                });
+                tulip.addEventListener('mouseleave', () => {
+                    tulip.classList.remove('bright');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
